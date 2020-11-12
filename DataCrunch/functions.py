@@ -11,7 +11,6 @@ for line in datalog:
 datalog.close()
 """
 
-with open("sample1.std","rb") as file:
-    Data_IO = io.BytesIO(file.read())
-    datalog = Data_IO.getvalue()
-    print(datalog)
+with open("1.stdf","rb") as file:
+    hexdata=file.read().hex()
+    print(hexdata)
